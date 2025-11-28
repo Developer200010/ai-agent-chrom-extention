@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Agent</title>
+    <style>
+      body { font-family: sans-serif; width: 300px; padding: 10px; }
+      textarea { width: 100%; height: 60px; }
+      button { margin-top: 8px; width: 100%; padding: 6px; }
+      pre { background: #f4f4f4; padding: 8px; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <h3>AI Agent Search</h3>
+
+    <textarea id="query" placeholder="Ask something..."></textarea>
+    
+    <button id="run">Run</button>
+
+    <h4>Best Match</h4>
+    <div id="best"></div>
+    <div id="score"></div>
+    <div id="source"></div>
+
+    <button id="toggle-trace">Show Trace</button>
+    <pre id="trace" style="display:none;"></pre>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
